@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .q1 {
+            display: flex;
+        }
+
+        #a2 {
+
+            margin: 0 10px;
+            width: 150px;
+            height: 100px;
+            background-color: red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <input type="button" value="点击将div变成黑色" id="btn">
+    <div class="q1">
+        <div id="a2">1</div>
+        <div id="a2">2</div>
+        <div id="a2">3</div>
+    </div>
+
+
+
+</body>
+
+</html>
+<script>
+    var btnn = document.getElementById("btn");
+    // console.log(btnn);
+    var box = document.getElementById("a2")
+    btnn.onclick = function () {
+        box.style.backgroundColor = "black"
+    }
+
+</script>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <input type="checkbox">
+        <div id="dl">两周内自动登陆</div>
+    </div>
+
+    <div id="box1">测试</div>
+</body>
+
+</html>
+
+<script>
+    const a = document.getElementById("dl")
+    const b = document.getElementById("box1")
+    a.onmouseover=function(){
+       b.style.display="block"
+
+    }
+    a.onmouseout=function(){
+        b.style.display="none"
+    }
+</script>
+
+
+<style>
+    .box {
+        display: flex;
+        width: 200px;
+        margin: auto;
+    }
+
+    #box1 {
+        width: 200px;
+        margin: auto;
+        font-size: 21px;
+        display: none;
+        
+    }
+</style>

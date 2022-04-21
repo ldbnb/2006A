@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="box">
+            <input type="text" value="北京市" id="qwe" />
+            <input type="text" value="朝阳区" id="asd" />
+            <input type="button" value="传参" id="btn"/>
+        </div>
+    </div>
+</body>
+
+</html>
+<style>
+a {
+    text-decoration: none;
+}
+</style>
+<script>
+    const a = document.getElementById("qwe")  //第一个值
+    const b = document.getElementById("asd")  //第二个值
+    const c = document.getElementById("btn")  //按钮
+
+    c.onclick=function(){
+        alert(a.value)
+        alert(b.value)
+    }
+</script>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="输入法" id="btn">
+    <ul id="box">
+        <li>简写</li>
+        <li>拼音</li>
+        <li id="c">关闭</li>
+    </ul>
+</body>
+
+</html>
+
+<script>
+
+    const btnn = document.getElementById("btn")
+    const box1 = document.getElementById("box")
+    const a = document.getElementsByTagName("li")
+
+
+    btnn.onclick = function () {
+
+        if (box1.style.display != "block") {
+            box1.style.display = "block";
+        }
+        else {
+            c.onclick();
+        }
+    }
+
+    c.onclick = function () {
+        box1.style.display = "none"
+    }
+    for (let i = 0; i < a.length; i++) {
+        a[i].onmouseover = function () {
+            this.style.background = "red"
+        }
+        a[i].onmouseout = function () {
+            this.style.background = "";
+        }
+    }
+
+
+  
+
+</script>
+
+
+<style>
+    #box {
+        display: none;
+    }
+
+li {
+    list-style: none;
+}
+</style>
