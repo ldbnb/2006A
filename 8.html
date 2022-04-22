@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #qwe {
+        display: none;
+        background-color: red;
+        width: 400px;
+        height: 230px;
+    }
+
+    h2 {
+        background-color: #ccc;
+        height: 30px;
+    }
+
+    h2 span {
+        float: right;
+    }
+</style>
+
+<body>
+    <input type="button" value="弹出层" id="btn">
+    <div id="qwe">
+        <h2>
+            <span id="aa">×</span>
+        </h2>
+    </div>
+</body>
+<script>
+    const a = document.getElementById("btn") //点击出现
+    const b = document.getElementById("aa") //点击隐藏
+    const c = document.getElementById("qwe") //盒子
+    a.onclick = function () {
+        c.style.display = "block"
+    }
+    b.onclick = function () {
+        c.style.display = "none"
+    }
+</script>
+
+</html>
